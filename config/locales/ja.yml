@@ -205,6 +205,8 @@ ja:
     pm: 午後
   views:
     messages:
+      agendas_list_name: "チームアジェンダ"
+      delete_agenda: "アジェンダを削除する"
       create_agenda: 'アジェンダ作成に成功しました！'
       create_article: '記事作成に成功しました！'
       update_article: '記事更新に成功しました！'

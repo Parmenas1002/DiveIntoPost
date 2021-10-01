@@ -46,6 +46,17 @@
                   <% end %>
                 </tbody>
               </table>
+              <h5><%= I18n.t('views.messages.agendas_list_name') %></h5>
+              <table class="table">
+                <tbody>
+                  <% @team.agendas.each do |agenda| %>
+                    <tr>
+                      <td><%= agenda.title %></td>
+                      <td><%= link_to I18n.t('views.button.delete'), agenda_path(agenda.id), method: :delete, class: 'btn btn-sm btn-danger' %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
